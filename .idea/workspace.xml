@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a2f0a3-efb1-481e-acc7-2c6f46773d14" name="Changes" comment="first day">
-      <change afterPath="$PROJECT_DIR$/PythonShowcase_CMathMethods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PythonShowcase_MathMethods.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PythonShowcase_StatisticsModules.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Section 02 - Core Data Concepts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Section 01 - Core Data Concepts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Section 02 - Core Data Concepts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Section 02 - Core Data Concepts.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,17 +34,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.PythonShowcase_StatisticsModules.executor": "Run",
-    "Python.Section 01 - Core Data Concepts.executor": "Run",
-    "Python.Section 02 - Core Data Concepts.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Agyei/PycharmProjects/UDEMY - Math for Data Science Masterclass",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.PythonShowcase_StatisticsModules.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Section 01 - Core Data Concepts.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Section 02 - Core Data Concepts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Agyei/PycharmProjects/UDEMY - Math for Data Science Masterclass&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Agyei\PycharmProjects\UDEMY - Math for Data Science Masterclass" />
@@ -79,7 +74,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782118370333</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first day">
+      <option name="closed" value="true" />
+      <created>1782456531585</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782456531585</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

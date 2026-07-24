@@ -2,7 +2,7 @@
 
 import statistics
 import math
-from pickle import GLOBAL
+import numpy
 
 DATASET_01 = [10, 20, 30, 40, 50]
 DATASET_02 = [5, 10, 15, 20, 25, 30]
@@ -67,8 +67,6 @@ def library_sample():
 
 
 ### library Sample ### ---------------------------------------------------------------------------------------------
-
-
 # Formula for Variance
 ### User Population Variance ### ---------------------------------------------------------------------------------------------
 def user_population_variance():
@@ -133,10 +131,7 @@ def library_sample_variance():
     result_lib_smpl_var = statistics.variance(DATASET_01)
     return result_lib_smpl_var
 ### Library Sample Variance ### ---------------------------------------------------------------------------------------------
-
-
 # Formula for Standard Deviation
-
 ### User Population Standard Deviation ### ---------------------------------------------------------------------------------------------
 
 def user_population_standard_deviation():
@@ -146,7 +141,6 @@ def user_population_standard_deviation():
     return pop_sigma
 
 ### User Population Standard Deviation ### ---------------------------------------------------------------------------------------------
-
 ### User Sample Standard Deviation ### ---------------------------------------------------------------------------------------------
 def user_sample_standard_deviation():
     global SAMPLE_Variance_TOTAL
@@ -154,40 +148,86 @@ def user_sample_standard_deviation():
     sample_s = math.sqrt(POPULATION_Variance_TOTAL ** 2)
     return sample_s
 ### User Sample Standard Deviation ### ---------------------------------------------------------------------------------------------
-
 ### Library Population Standard Deviation ### ---------------------------------------------------------------------------------------------
 def library_population_standard_deviation():
     lib_pop_sigma = statistics.pstdev(DATASET_01)
     return lib_pop_sigma
 ### Library Population Standard Deviation ### ---------------------------------------------------------------------------------------------
-
-
 ### Library Sample Standard Deviation ### ---------------------------------------------------------------------------------------------
 def library_sample_standard_deviation():
     lib_sample_s = statistics.stdev(DATASET_01)
     return lib_sample_s
 ### Library Sample Standard Deviation ### ---------------------------------------------------------------------------------------------
+### Weighted Mean ### ---------------------------------------------------------------------------------------------
+MEAN_EXAMPLE = [2,4,6,8,10]
+def weighted_mean():
 
-#    library Sample
+    weighted_mean_dividend = 0
+    weighted_mean_divisor = 0
+    total_weighted_mean = 0
+    current_dataset_value = 0
+    current_mean_example_value = 0
+
+    x = numpy.average(DATASET_01, MEAN_EXAMPLE)
+    print(x)
+
+    # weighted_mean_dividend = math.fsum([DATASET_01[i] * MEAN_EXAMPLE[i] for i in range(len(DATASET_01)))]
+    # for w in DATASET_01:
+    #     current_dataset_value = w
+    #     # print(current_dataset_value)
+    #     for x in MEAN_EXAMPLE:
+    #         current_mean_example_value = x
+    #         # print(current_mean_example_value)
+    #         weighted_mean_dividend += current_dataset_value * current_mean_example_value
+    # print(weighted_mean_dividend)
+    #
+    # for wi in MEAN_EXAMPLE:
+    #     weighted_mean_divisor += wi
+    # print(weighted_mean_divisor)
+
+
+
+
+    # return total_weighted_mean
+### Weighted Mean ### ---------------------------------------------------------------------------------------------
+
+
+# t o d o
+# weighted mean function
+# Mode Function (return message of Mode, Bi-Modal, or no mode)
+
+# truncated function
+# Quartiles function          add if check for even or odd number of values
+# IQR function
+# range function
+
+# Median Function
+
+
+
+
+
+
+
 
 ### FINAL RUN ### ---------------------------------------------------------------------------------------------
 # print("\n")
 # print(user_population_variance())
-print("\n")
-print(user_sample_variance())
+# print("\n")
+# print(user_sample_variance())
 # print("\n")
 # print(library_population_variance())
-print("\n")
-print(library_sample_variance())
+# print("\n")
+# print(library_sample_variance())
 # print("\n")
 # print(user_population_standard_deviation())
-print("\n")
-print(user_sample_standard_deviation())
+# print("\n")
+# print(user_sample_standard_deviation())
 # print("\n")
 # print(library_population_standard_deviation())
-print("\n")
-print(library_sample_standard_deviation())
-
+# print("\n")
+# print(library_sample_standard_deviation())
+print(weighted_mean())
 
 
 
