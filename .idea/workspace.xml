@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75a2f0a3-efb1-481e-acc7-2c6f46773d14" name="Changes" comment=" update" />
+    <list default="true" id="75a2f0a3-efb1-481e-acc7-2c6f46773d14" name="Changes" comment=" update">
+      <change afterPath="$PROJECT_DIR$/WeatherData API process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sections todo List.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/UDEMY - Math for Data Science Masterclass.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UDEMY - Math for Data Science Masterclass.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,26 +26,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AKArthur1"
-  }
-}]]></component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="cba8fc7b-8295-498a-945b-8794faf77a54" />
-  </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AKArthur1/UDEMY_-_Math_for_Data_Science_Masterclass.git",
-    "accountId": "cba8fc7b-8295-498a-945b-8794faf77a54"
-  }
-}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="3FU6dRjWsYoPj0m7NzPu98gOXkz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -51,10 +42,16 @@
     "Python.PythonShowcase_StatisticsModules.executor": "Run",
     "Python.Section 01 - Core Data Concepts.executor": "Run",
     "Python.Section 02 - Core Data Concepts.executor": "Run",
+    "Python.sections todo List.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/Agyei/PycharmProjects/UDEMY - Math for Data Science Masterclass",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -102,15 +99,7 @@
       <option name="project" value="LOCAL" />
       <updated>1784868021012</updated>
     </task>
-    <task id="LOCAL-00004" summary=" update">
-      <option name="closed" value="true" />
-      <created>1784868154988</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1784868154988</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
