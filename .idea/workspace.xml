@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75a2f0a3-efb1-481e-acc7-2c6f46773d14" name="Changes" comment=" update">
-      <change afterPath="$PROJECT_DIR$/WeatherData API process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sections todo List.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/UDEMY - Math for Data Science Masterclass.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UDEMY - Math for Data Science Masterclass.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="75a2f0a3-efb1-481e-acc7-2c6f46773d14" name="Changes" comment=" update api section">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherData API process.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherData API process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +39,7 @@
     "Python.PythonShowcase_StatisticsModules.executor": "Run",
     "Python.Section 01 - Core Data Concepts.executor": "Run",
     "Python.Section 02 - Core Data Concepts.executor": "Run",
+    "Python.WeatherData API process.executor": "Run",
     "Python.sections todo List.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -99,12 +97,29 @@
       <option name="project" value="LOCAL" />
       <updated>1784868021012</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" update api section">
+      <option name="closed" value="true" />
+      <created>1785210327822</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1785210327822</updated>
+    </task>
+    <task id="LOCAL-00005" summary=" update api section">
+      <option name="closed" value="true" />
+      <created>1785210489680</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1785210489680</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first day" />
     <MESSAGE value=" update" />
-    <option name="LAST_COMMIT_MESSAGE" value=" update" />
+    <MESSAGE value=" update api section" />
+    <option name="LAST_COMMIT_MESSAGE" value=" update api section" />
   </component>
 </project>
