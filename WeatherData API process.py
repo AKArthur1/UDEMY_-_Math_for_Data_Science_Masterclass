@@ -2,7 +2,6 @@ import requests, json
 import pandas as pd
 from fontTools.misc.cython import returns
 
-api_key = "4d4abe6f83b083056d523437bf77c146"
 base_url = "http://api.openweathermap.org/data/2.5/weather"
 
 # city_name = input("Enter city name : ")
