@@ -1,11 +1,18 @@
 import requests, json
 import pandas as pd
-from fontTools.misc.cython import returns
+import os
+from dotenv import load_dotenv
+from geopy.geocoders import Nominatim
 
-base_url = "http://api.openweathermap.org/data/2.5/weather"
+load_dotenv()
+api_key = os.getenv("api_key")
+print(api_key)
+base_url = "https://api.openweathermap.org/data/4.0/onecall/timeline/1day?"
+
+
 
 # city_name = input("Enter city name : ")
-
+# https://api.openweathermap.org/data/4.0/onecall/timeline/1day?lat={lat}&lon={lon}&appid={API key}
 
 dataframe = pd.read_csv("data/equipment_anomaly_data.csv")
 # print(dataframe.head())
@@ -25,13 +32,32 @@ for x in city_name_row_dump:
         city_name_list.append(x)
         # dataframe['location'].tolist()
 
-### URL dictionary creation ### ---------------------------------------------------------------------------------------------
+
+
+### LATLONG CONVERT ### ---------------------------------------------------------------------------------------------
+
+
+lat = ""
+lon = ""
+for x in city_name_list:
+    lat = ""
+    lon = ""
+
+
+
+### URL dictionary creation ### ---------------------------------------------------------------------------------------
 city_name = ''
 url_dict = {}
+
+
 for x in city_name_list:
     # url_dict.update({x:city_name})
     city_name = x.replace(" ", "")
-    url_dict.update({x: base_url + "appid=" + api_key + "&q=" + city_name})
+    # url_dict.update({x: base_url + "appid=" + api_key + "&q=" + city_name})
+    url_dict.update({x:base_url + f"lat={lat}&lon={lon}&appid={api_key}"})
+
+with open(f"City url Dict/ city url dict file.txt", "w") as f:
+    f.write(f"{url_dict}")
 
 
 
@@ -106,5 +132,13 @@ for x in url_dict:
 # print(url_dict)
 # print(response_list_dict)
 # print(response)
+
+
+
+# complete_url = base_url + "appid=" + "33ae3127a66a7f8d3391e53d13ceded8" + "&q=" + "Atlanta"
+# response = requests.get(complete_url)
+# x = response.json()
+# print(x)
+
 
 
