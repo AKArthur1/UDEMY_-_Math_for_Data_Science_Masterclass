@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from geopy.geocoders import Nominatim
 
 load_dotenv()
-api_key = os.getenv("api_key")
+api_key = os.getenv("API_KEY")
 print(api_key)
 base_url = "https://api.openweathermap.org/data/4.0/onecall/timeline/1day?"
 
