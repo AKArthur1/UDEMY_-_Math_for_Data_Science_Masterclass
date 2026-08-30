@@ -32,6 +32,7 @@ for x in city_name_row_dump:
         city_name_list.append(x)
         # dataframe['location'].tolist()
 
+print(dataframe)
 
 
 ### LATLONG CONVERT ### ---------------------------------------------------------------------------------------------
