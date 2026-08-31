@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75a2f0a3-efb1-481e-acc7-2c6f46773d14" name="Changes" comment=" update api security">
-      <change afterPath="$PROJECT_DIR$/WeatherHistoryData_ApiProcess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/cities500.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/uscities.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_27_26,_2_42 PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_27_26__2_42PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="75a2f0a3-efb1-481e-acc7-2c6f46773d14" name="Changes" comment="update latlong dictionary">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/City url Dict/ city url dict file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/City url Dict/ city url dict file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherData API process.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherData API process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherHistoryData_ApiProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherHistoryData_ApiProcess.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785558372562</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update latlong dictionary">
+      <option name="closed" value="true" />
+      <created>1788133281835</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1788133281835</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -176,6 +178,7 @@
     <MESSAGE value=" update api section" />
     <MESSAGE value=" update api section with txt write" />
     <MESSAGE value=" update api security" />
-    <option name="LAST_COMMIT_MESSAGE" value=" update api security" />
+    <MESSAGE value="update latlong dictionary" />
+    <option name="LAST_COMMIT_MESSAGE" value="update latlong dictionary" />
   </component>
 </project>

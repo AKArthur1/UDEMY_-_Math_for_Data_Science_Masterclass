@@ -32,6 +32,41 @@ params = {
 
 dataframe = pd.read_csv("data/equipment_anomaly_data.csv")
 city_name_row_dump = dataframe['location'].tolist()
+# ### LATLONG  ### ---------------------------------------------------------------------------------------------
+
+
+atlanta_latlong = [
+    {
+        "lat": 33.748997,
+        "long": -84.387985,
+    }
+]
+chicago_latlong = [
+    {
+        "lat": 41.878113,
+        "long": -87.629799,
+    }
+]
+sanfrancisco_latlong = [
+    {
+        "lat": 37.774929,
+        "long": -122.419418,
+    }
+]
+newyork_latlong = [
+    {
+        "lat": 40.712776,
+        "long": -74.005974,
+    }
+]
+houston_latlong = [
+    {
+        "lat": 29.749907,
+        "long": -95.358421,
+    }
+]
+
+
 ### Pull City Names from csv ### ---------------------------------------------------------------------------------------------
 city_name_list = []
 for x in city_name_row_dump:
@@ -44,16 +79,7 @@ for x in city_name_row_dump:
         # dataframe['location'].tolist()
 # print(city_name_list)
 
-# ### LATLONG  ### ---------------------------------------------------------------------------------------------
-# dataframe_latlong = pd.read_csv("data/city Lat Long list.csv")
-# city_name_row_dump = dataframe_latlong['location'].tolist()
 
-# {'Atlanta':
-#      {'lat':""},
-#  'Chicago': ,
-#  'San Francisco': ,
-#  'New York': ,
-#  'Houston': }
 
 
 # ### URL dictionary creation ### ---------------------------------------------------------------------------------------
@@ -65,7 +91,10 @@ for x in city_name_list:
     city_name = x.replace(" ", "")
     x_url = f"{base_url}lat={lat}&lon={long}&appid={api_key}"
     url_dict.update({x:{"url":x_url}})
-    url_dict["lat"] = ""
+    y_lat = f"{x + "_latlong"}"
+    print(y_lat.lower())
+    # y_lat.get("lat")
+    # url_dict[x]["lat"]
 
 
 with open(f"City url Dict/ city url dict file.txt", "w") as f:
