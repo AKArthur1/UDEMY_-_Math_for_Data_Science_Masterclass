@@ -19,20 +19,51 @@ long = 0
 start_day = "2025-01-01"
 end_day = "2025-12-31"
 
-params = {
-	"latitude": lat,
-	"longitude": long,
+
+atlanta_params = {
+	"latitude": 33.748997,
+	"longitude": -84.387985,
+    "start_date": start_day,
+    "end_date": end_day,
+    "daily": ["temperature_2m_max", "temperature_2m_min"]
+
+}
+
+chicago_params = {
+	"latitude": 41.878113,
+	"longitude": -87.629799,
+    "start_date": start_day,
+    "end_date": end_day,
+
+}
+sanfrancisco_params = {
+	"latitude": 37.774929,
+	"longitude": -122.419418,
+    "start_date": start_day,
+    "end_date": end_day,
+
+}
+newyork_params = {
+	"latitude": 40.712776,
+	"longitude": -74.005974,
+    "start_date": start_day,
+    "end_date": end_day,
+
+}
+houston_params = {
+	"latitude": 29.749907,
+	"longitude": -95.358421,
     "start_date": start_day,
     "end_date": end_day,
 
 }
 
-# responses = openmeteo.weather_api(base_url, params=params)
+
 
 
 dataframe = pd.read_csv("data/equipment_anomaly_data.csv")
 city_name_row_dump = dataframe['location'].tolist()
-# ### LATLONG  ### ---------------------------------------------------------------------------------------------
+### LATLONG  ### ---------------------------------------------------------------------------------------------
 
 
 atlanta_latlong = [
@@ -67,6 +98,14 @@ houston_latlong = [
 ]
 
 
+### Full URLs ### --------------------------------------------------------------------------------------------------------
+atlanta_full_url = {'Atlanta': {'url': 'https://api.open-meteo.com/v1/forecastlat=33.748997&lon=-84.387985&appid=4d4abe6f83b083056d523437bf77c146'}}
+chicago_full_url = {'Chicago': {'url': 'https://api.open-meteo.com/v1/forecastlat=41.878113&lon=-87.629799&appid=4d4abe6f83b083056d523437bf77c146'}}
+houston_full_url = {'Houston': {'url': 'https://api.open-meteo.com/v1/forecastlat=29.749907&lon=-95.358421&appid=4d4abe6f83b083056d523437bf77c146'}}
+newyork_full_url = {'New York': {'url': 'https://api.open-meteo.com/v1/forecastlat=40.712776&lon=-74.005974&appid=4d4abe6f83b083056d523437bf77c146'}}
+sanfrancisco_full_url = {'San Francisco': {'url': 'https://api.open-meteo.com/v1/forecastlat=37.774929&lon=-122.419418&appid=4d4abe6f83b083056d523437bf77c146'}}
+
+
 ### Pull City Names from csv ### ---------------------------------------------------------------------------------------------
 city_name_list = []
 for x in city_name_row_dump:
@@ -77,34 +116,34 @@ for x in city_name_row_dump:
     else:
         city_name_list.append(x)
         # dataframe['location'].tolist()
-# print(city_name_list)
+print(city_name_list)
 
 
 
 
 # ### URL dictionary creation ### ---------------------------------------------------------------------------------------
-city_name = ''
-url_dict = {}
+# city_name = ''
+# url_dict = {}
+#
+#
+# for x in city_name_list:
+#     city_name = x.replace(" ", "")
+#     x_url = f"{base_url}lat=__LATITUDE__&lon=__LONGITUDE__&appid={api_key}"
+#     url_dict.update({x:{"url":x_url}})
+#
+# with open(f"City url Dict/ city url dict file.json", "w") as f:
+#     f.write(f"{url_dict}")
+#
+# pprint(url_dict)
 
+
+
+ ### requests response ### ---------------------------------------------------------------------------------------------
 
 for x in city_name_list:
-    city_name = x.replace(" ", "")
-    x_url = f"{base_url}lat={lat}&lon={long}&appid={api_key}"
-    url_dict.update({x:{"url":x_url}})
-    y_lat = f"{x + "_latlong"}"
-    print(y_lat.lower())
-    # y_lat.get("lat")
-    # url_dict[x]["lat"]
+    responses = openmeteo.weather_api(base_url, params=x + "_params")
 
 
-with open(f"City url Dict/ city url dict file.txt", "w") as f:
-    f.write(f"{url_dict}")
-
-pprint(url_dict)
-
-
-
-# ### requests response ### ---------------------------------------------------------------------------------------------
 #
 # response_list_dict = {}
 # for x in url_dict:

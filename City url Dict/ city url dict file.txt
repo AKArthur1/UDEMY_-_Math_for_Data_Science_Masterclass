@@ -1,1 +1,5 @@
-{'Atlanta': {'url': 'https://api.open-meteo.com/v1/forecastlat=0&lon=0&appid=4d4abe6f83b083056d523437bf77c146'}, 'Chicago': {'url': 'https://api.open-meteo.com/v1/forecastlat=0&lon=0&appid=4d4abe6f83b083056d523437bf77c146'}, 'San Francisco': {'url': 'https://api.open-meteo.com/v1/forecastlat=0&lon=0&appid=4d4abe6f83b083056d523437bf77c146'}, 'New York': {'url': 'https://api.open-meteo.com/v1/forecastlat=0&lon=0&appid=4d4abe6f83b083056d523437bf77c146'}, 'Houston': {'url': 'https://api.open-meteo.com/v1/forecastlat=0&lon=0&appid=4d4abe6f83b083056d523437bf77c146'}}
+{'Atlanta': {'url': 'https://api.open-meteo.com/v1/forecastlat=33.748997&lon=-84.387985&appid=4d4abe6f83b083056d523437bf77c146'},
+ 'Chicago': {'url': 'https://api.open-meteo.com/v1/forecastlat=41.878113&lon=-87.629799&appid=4d4abe6f83b083056d523437bf77c146'},
+ 'Houston': {'url': 'https://api.open-meteo.com/v1/forecastlat=29.749907&lon=-95.358421&appid=4d4abe6f83b083056d523437bf77c146'},
+ 'New York': {'url': 'https://api.open-meteo.com/v1/forecastlat=40.712776&lon=-74.005974&appid=4d4abe6f83b083056d523437bf77c146'},
+ 'San Francisco': {'url': 'https://api.open-meteo.com/v1/forecastlat=37.774929&lon=-122.419418&appid=4d4abe6f83b083056d523437bf77c146'}}
