@@ -141,7 +141,7 @@ print(city_name_list)
  ### requests response ### ---------------------------------------------------------------------------------------------
 
 for x in city_name_list:
-    responses = openmeteo.weather_api(base_url, params=x + "_params")
+    responses = openmeteo.weather_api(base_url, params= x + "_params")
 
 
 #
