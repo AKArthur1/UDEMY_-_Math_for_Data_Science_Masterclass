@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75a2f0a3-efb1-481e-acc7-2c6f46773d14" name="Changes" comment="update full url params">
+      <change afterPath="$PROJECT_DIR$/Avg Yearly City Temp/AvgYearlyCityTemp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherInternal_ApiProcess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherHistoryData_ApiProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherHistoryData_ApiProcess.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +56,13 @@
     "Python.WeatherData API process.executor": "Run",
     "Python.WeatherHistoryData_ApiProcess.executor": "Run",
     "Python.WeatherHistroyData_ApiProcess.executor": "Run",
+    "Python.WeatherInternal_ApiProcess.executor": "Run",
     "Python.sections todo List.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/agyeiarthur/PycharmProjects/UDEMY_-_Math_for_Data_Science_Masterclass/data",
+    "last_opened_file_path": "/Users/agyeiarthur/PycharmProjects/UDEMY_-_Math_for_Data_Science_Masterclass",
     "settings.editor.selected.configurable": "preferences.sourceCode.Python"
   },
   "keyToStringList": {
@@ -69,6 +73,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="C:\Users\Agyei\PycharmProjects\UDEMY - Math for Data Science Masterclass" />
     </key>
@@ -185,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788653115799</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update full url params">
+      <option name="closed" value="true" />
+      <created>1788653813861</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1788653813861</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -34,6 +34,7 @@ chicago_params = {
 	"longitude": -87.629799,
     "start_date": start_day,
     "end_date": end_day,
+    "daily": ["temperature_2m_max", "temperature_2m_min"]
 
 }
 sanfrancisco_params = {
@@ -41,6 +42,7 @@ sanfrancisco_params = {
 	"longitude": -122.419418,
     "start_date": start_day,
     "end_date": end_day,
+    "daily": ["temperature_2m_max", "temperature_2m_min"]
 
 }
 newyork_params = {
@@ -48,6 +50,7 @@ newyork_params = {
 	"longitude": -74.005974,
     "start_date": start_day,
     "end_date": end_day,
+    "daily": ["temperature_2m_max", "temperature_2m_min"]
 
 }
 houston_params = {
@@ -55,6 +58,7 @@ houston_params = {
 	"longitude": -95.358421,
     "start_date": start_day,
     "end_date": end_day,
+    "daily": ["temperature_2m_max", "temperature_2m_min"]
 
 }
 
@@ -99,11 +103,11 @@ houston_latlong = [
 
 
 ### Full URLs ### --------------------------------------------------------------------------------------------------------
-atlanta_full_url = {'Atlanta': {'url': 'https://api.open-meteo.com/v1/forecastlat=33.748997&lon=-84.387985&appid=4d4abe6f83b083056d523437bf77c146'}}
-chicago_full_url = {'Chicago': {'url': 'https://api.open-meteo.com/v1/forecastlat=41.878113&lon=-87.629799&appid=4d4abe6f83b083056d523437bf77c146'}}
-houston_full_url = {'Houston': {'url': 'https://api.open-meteo.com/v1/forecastlat=29.749907&lon=-95.358421&appid=4d4abe6f83b083056d523437bf77c146'}}
-newyork_full_url = {'New York': {'url': 'https://api.open-meteo.com/v1/forecastlat=40.712776&lon=-74.005974&appid=4d4abe6f83b083056d523437bf77c146'}}
-sanfrancisco_full_url = {'San Francisco': {'url': 'https://api.open-meteo.com/v1/forecastlat=37.774929&lon=-122.419418&appid=4d4abe6f83b083056d523437bf77c146'}}
+atlanta_full_url = 'https://api.open-meteo.com/v1/forecastlat=33.748997&lon=-84.387985&appid=4d4abe6f83b083056d523437bf77c146'
+chicago_full_url = 'https://api.open-meteo.com/v1/forecastlat=41.878113&lon=-87.629799&appid=4d4abe6f83b083056d523437bf77c146'
+houston_full_url = 'https://api.open-meteo.com/v1/forecastlat=29.749907&lon=-95.358421&appid=4d4abe6f83b083056d523437bf77c146'
+newyork_full_url = 'https://api.open-meteo.com/v1/forecastlat=40.712776&lon=-74.005974&appid=4d4abe6f83b083056d523437bf77c146'
+sanfrancisco_full_url = 'https://api.open-meteo.com/v1/forecastlat=37.774929&lon=-122.419418&appid=4d4abe6f83b083056d523437bf77c146'
 
 
 ### Pull City Names from csv ### ---------------------------------------------------------------------------------------------
@@ -141,7 +145,33 @@ print(city_name_list)
  ### requests response ### ---------------------------------------------------------------------------------------------
 
 for x in city_name_list:
-    responses = openmeteo.weather_api(base_url, params= x + "_params")
+    params_x = x + "_params"
+    print(params_x)
+    responses = openmeteo.weather_api(base_url, params= params_x)
+    print(responses)
+
+
+
+
+
+### each city  request --------------------------------------------------------------------------------
+
+atlanta_responses = openmeteo.weather_api(atlanta_full_url, params= atlanta_params)
+chicago_responses = openmeteo.weather_api(base_url, params= chicago_params)
+houston_responses = openmeteo.weather_api(base_url, params= sanfrancisco_params)
+newyork_responses = openmeteo.weather_api(base_url, params= newyork_params)
+sanfrancisco_responses = openmeteo.weather_api(base_url, params= houston_params)
+
+
+
+atlanta_response = atlanta_responses[0]
+chicago_response = chicago_responses[0]
+houston_response = houston_responses[0]
+newyork_response = newyork_responses[0]
+sanfrancisco_response = sanfrancisco_responses[0]
+
+print(atlanta_response)
+
 
 
 #
